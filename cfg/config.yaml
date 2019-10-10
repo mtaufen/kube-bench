@@ -21,6 +21,7 @@ master:
     defaultconf: /etc/kubernetes/config
 
   apiserver:
+    optional: true
     bins:
       - "kube-apiserver"
       - "hyperkube apiserver"
@@ -32,6 +33,7 @@ master:
     defaultconf: /etc/kubernetes/manifests/kube-apiserver.yaml
 
   scheduler:
+    optional: true
     bins:
       - "kube-scheduler"
       - "hyperkube scheduler"
@@ -43,6 +45,7 @@ master:
     defaultconf: /etc/kubernetes/manifests/kube-scheduler.yaml
 
   controllermanager:
+    optional: true
     bins:
       - "kube-controller-manager"
       - "kube-controller"
